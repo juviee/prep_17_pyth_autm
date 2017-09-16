@@ -1,9 +1,5 @@
 import operator as op
-def parser(line):
-    s_list = line.split('/')
-    str_dic_f = lambda x: {x[0]: str_dic_f(x[1:])} if x[1:] else x[0]
-    return str_dic_f
-
+import sys
 def counter(sss):
     if sss:
         s = 1
